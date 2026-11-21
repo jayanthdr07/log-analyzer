@@ -7,7 +7,6 @@ from contextvars import ContextVar
 
 request_id_var: ContextVar[str] = ContextVar("request_id", default="-")
 
-# Ordered: specific token shapes first, generic key=value last.
 _REDACTIONS = [
     (re.compile(r"-----BEGIN [A-Z ]*PRIVATE KEY-----.*?-----END [A-Z ]*PRIVATE KEY-----", re.S), "[REDACTED_PRIVATE_KEY]"),
     (re.compile(r"\beyJ[\w-]{8,}\.[\w-]{8,}\.[\w-]{8,}\b"), "[REDACTED_JWT]"),
