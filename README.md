@@ -1,4 +1,4 @@
-# AI Log Analyzer
+# *AI Log Analyzer*
 
 A small, resilient Python service that accepts server logs and returns an AI-generated incident analysis (summary, severity, probable root cause, affected components, recommended actions).
 
