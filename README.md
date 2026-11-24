@@ -160,3 +160,6 @@ These tests use a mocked HTTP transport (no network, no API key needed) and veri
 - **Large logs:** inputs over `MAX_LOG_CHARS` are rejected rather than truncated. Pre-filter or chunk upstream if you need to analyze more.
 - **Data handling:** log text is sent to a third-party provider (after redaction). Confirm this meets your data-handling policy.
 - **Monitoring:** alert on 5xx rates and on `retry_scheduled` events, which signal provider instability.
+---
+# Author
+- Jayanth  D R
